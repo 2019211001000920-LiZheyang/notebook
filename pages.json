@@ -1,0 +1,39 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/notes/Notes",
+			"style": {
+				"navigationBarTitleText": "日常笔记"
+			}
+		},
+		{
+			"path":"pages/upcoming/upcoming",
+			"style": {
+				"navigationBarTitleText": "待办事务"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"color":"#bfbfbf",
+		"selectedColor":"#1296db",
+		"backgroundColor":"white",
+		"list": [{
+			"pagePath":"pages/notes/Notes",
+			"iconPath":"./static/tabBar/notes.png",
+			"selectedIconPath":"./static/tabBar/active-notes.png",
+			"text":"笔记"
+		},
+		{
+			"pagePath":"pages/upcoming/upcoming",
+			"iconPath":"./static/tabBar/upcoming.png",
+			"selectedIconPath":"./static/tabBar/active-upcoming.png",
+			"text":"待办"
+		}]
+	}
+}
