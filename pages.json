@@ -7,10 +7,13 @@
 			}
 		},
 		{
-			"path":"pages/upcoming/upcoming",
+			"path":"pages/upcoming/Upcoming",
 			"style": {
 				"navigationBarTitleText": "待办事务"
 			}
+		},
+		{
+			"path": "pages/detail/Detail"
 		}
 	],
 	"globalStyle": {
@@ -30,7 +33,7 @@
 			"text":"笔记"
 		},
 		{
-			"pagePath":"pages/upcoming/upcoming",
+			"pagePath":"pages/upcoming/Upcoming",
 			"iconPath":"./static/tabBar/upcoming.png",
 			"selectedIconPath":"./static/tabBar/active-upcoming.png",
 			"text":"待办"

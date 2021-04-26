@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view class="navbar">
 		<view class="nav">
 			<view class="nav-button" 
 						@touchstart="navTouchStart" 
@@ -8,10 +8,7 @@
 				<image src="../../static/nav/nav.png"></image>
 			</view>
 		</view>
-		<view class="nav-text">
-			<view class="head">全部笔记</view>
-			<view class="count">?个笔记</view>
-		</view>
+		<slot></slot>
 		<view class="set">
 			<view class="set-button" 
 						@touchstart="setTouchStart" 
@@ -50,57 +47,50 @@
 </script>
 
 <style>
+	.navbar {
+		height: 145upx;
+		width: 100%;
+		/* background-color: #fff; */
+	}
+	
 	.nav {
 		position: float;
 		float: left;
-		width: 80px;
-		height: 80px;
+		width: 145upx;
+		height: 145upx;
 	}
 	
 	.nav-button {
-		width: 60px;
-		height: 60px;
-		margin: 10px;
+		width: 109.09upx;
+		height: 109.09rpx;
+		margin: 18.18upx;
 		border-radius: 15px;
-	}
-	
-	.nav-text {
-		position: float;
-		float: left;
-		height: 80px;
-	}
-	
-	.nav-text .head {
-		font-size: 30px;
-		width: 120px;
-		height: 40px;
-		margin-top: 20px;
-	}
-	
-	.nav-text .count {
-		font-size: 14px;
-		color: #999999;
 	}
 	
 	.set {
 		position: float;
 		float: right;
-		width: 80px;
-		height: 80px;
+		width: 145upx;
+		height: 145upx;
 	}
 	
 	.set-button {
-		width: 60px;
-		height: 60px;
-		margin: 10px;
+		width: 109.09upx;
+		height: 109.09upx;
+		margin: 18.18upx;
 		border-radius: 15px;
 	}
 	
-	.nav-button image,
+	.nav-button image {
+		width: 54.54upx;
+		height: 54.54upx;
+		margin: 27.27upx;
+	}
+	
 	.set-button image {
-		width: 30px;
-		height: 30px;
-		margin: 15px;
+		width: 45.45upx;
+		height: 45.45upx;
+		margin: 31.81upx;
 	}
 	
 	.active {
